@@ -1,0 +1,102 @@
+<!-- This is a comment, and below the type of document, vary in strictness and norms-->
+<!-- HTML HyperText MarkUp Language/XHTML (Extensible)/HTML5 -->
+
+<!DOCTYPE html>
+<!-- Opening tag of the page-->
+<html>
+<!-- HEAD identifies title of the page and meta information-->
+<!-- UTF is for unicode character transformation-->
+<!-- For different devices VIEWPORT gives  different configurations-->
+<head>
+ <title> My Web Page </title>
+ <meta name="my description" content="the content description for search engines"/>
+ <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Defines the style of the page and elements CSS (Cascading Style Sheets) -->
+<!-- For body it displays all the text color red -->
+ <style type="text/css">
+	Body{
+		color:red;
+  	}
+ </style>
+
+<!-- Javascript function, allows interactable elements usage -->
+ <script>
+	function myFunction() {
+		var x = document.getElementById("fname");
+		x.value = x.value.toUpperCase();
+  	}
+ </script>
+</head>
+<!-- Body contains the content visible within the web browser, links, text, images, etc-->
+<body>
+	<h1> I'm header 1, hi! </h1>
+	<h2> I'm header 2, hi! </h2>
+	<h3> I'm header 3, hi! </h3>
+	<h4> I'm header 4, hi! </h4>
+<h1>Freeform text + paragraph </h1>
+<p>Hello World! This is a Sample of HTML Doc! </p>
+Javascript will kindly capitalize a name, if it's yours cool:
+<p> Enter your name, or a name: <input type="text" id="fname" onchange="myFunction()"> </p>
+
+<p>
+	This is another example of paragraph use <br> 
+	in addition with the usage of break command 
+</p>
+<!-- white spacing collapsing prevents using multiple spaces, unless the (& nbsp); tag is used --> 
+<h1>Text file format</h1>
+<p> 
+	<strong>I'm strong bold text! </strong> <br> 
+	<em> I'm em  italic! Salve! </em> <br> 
+	<u> I'm underlined text! </u> <br> 
+	<strike>And I'm striked text!</strike>
+</p>
+
+<h2><font face="arial" size="22" color="blue"> Fancy title! named inline!</font></h2>
+
+<h1> My favorites lists </h1>
+
+<ul>
+	<li>about things</li>
+	<li>about stuff</li>
+	<li>about elements</li>
+	<li>about ideas</li>
+	<li>about points</li>
+	<li>and more!</li>
+</ul>
+
+<h1> Top 7 numbers (+Z) </h1>
+<ol>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+</ol>
+
+<h1> IMAGES SECTION </h1>
+
+<p>
+
+<img src="./IMG/Christ.png" width="400" height="250">
+<img src="./IMG/comet.jpeg" width="400" height="250">
+<img src="./IMG/Daniel.png" width="400" height="250">
+<img src="./IMG/astronaunts.jpeg" width="400" height="250">
+<img src="./IMG/Samson.png" width="400" height="250">
+<img src="./IMG/Luna&Sol.jpeg" width="400" height="250">
+<!-- Can be absolute path (with a link it works too) -->
+</p>
+
+<h1> VIDEO SECTION - (HellcatSRT) </h1>
+<!-- autoplay attribute instead of controls! -->
+<video width="720" controls>
+	<source src="./VID/HellcatSRT.mp4" type="video/mp4">
+	Your browser does not support the video tag
+</video>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>My Form Page!</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<!-- Se agrega un nombre al formulario, el script que ejecuta (que en el caso del curso es php)-->
+		<!-- y tambien el metodo de transmision de informacion GET/POST -->
+		<form name="employment" action="send.php" method="post">
+		<!-- HTTP protocolo entre cliente y servidor
+		GET pide informacion sobre algun recurso
+		POST entrega informacion necesaria a ese recurso
+		Ejemplo GET
+		send.php?fname=john&lname=smith
+		Ejemplo POST
+		send.php HTTP/1.1
+		Host: <page>
+		fname=john&lname=smith
+		-->
+
+		<!-- ADICIONAL  -->
+		<!--GET 
+		-Puede ser cached
+		-Permanece en el historial
+		-Pueden ser marcadas como favoritas
+		-Solo se usa para recuperar informacion
+		-Limite de largo
+		-NO INFORMACION SENSIBLE
+
+		POST
+		-No restriccion en el largo de la informacion
+		-No puede ser marcado como favorito
+		-No permanece en el historial
+		-No son cacheadas
+		-->
+		<table width="650" border="1" cellspacing"2" cellpadding="2">	
+			<tr>
+				<td colspan="4" align="center"><strong>EMPLOYMENT APPLICATION</strong></td>
+			</tr>
+			<tr>
+				<td>Field first name</td>
+				<td><input type="text" name="firstname" maxlength="50" /></td>
+				<!-- lowercase, without special symbols (if possible)-->
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lastname" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>Position</td>
+				<td>
+					<select name="posicion">
+						<option value"PR">Presidente</option>
+						<option value"AM">America</option>
+						<option value"IN">Interno</option>
+						<option value"DE">Desempleado</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Experience Level</td>
+				<td>
+					<select name="experience">
+						<option value"EX">Experimentado</option>
+                                       		<option value"EL">Entry Level</option>
+                                        	<option value"D64">Hey not too rough (Desempleado)</option>
+                                        	<option value"NIG">Nightmare! (Nula)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Application Type</td>
+				<td>
+					<input name="ft" type="checkbox"/>Full-Time<br>
+					<input name="pt" type="checkbox"/>Part-Time<br>	
+					<input name="ct" type="checkbox"/>Contract-Time?</td>
+			</tr>
+			<tr>
+				<td>Current Status</td>
+				<!-- radio group -->
+				<td>
+					<input type="radio" name="status"  value="employed" />Employed
+					<input type="radio" name="status" value="unemployed" />Unemployed
+					<input type="radio" name="status" value="student" />Student
+				</td>
+			</tr>
+			<tr>
+				<td>Additional Comments</td>
+				<td>
+					<textarea name="comments" cols="63" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" colspan="4" nowrap>
+					<input name="Submit" type="Submit" value="Submit" />
+					<input name="Reset" type="Reset" value="Reset" />
+				</td>
+			</tr>
+		</table>
+		</form>
+	</body>
+
+
+</html>
