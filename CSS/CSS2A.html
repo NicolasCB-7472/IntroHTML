@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<!-- This is for external css stylesheet -->
+<link rel="stylesheet" href="CSS2B.css">
+
+
+<html>
+	<head>
+		<style>		
+		/* Pay attention to comments */
+		/* if the styles rules were here it would be internal */
+		/* Creation of classes and spans */
+		.blueboldtext{
+			font-size: small;
+			color: blue;
+			font-weight: bold;	
+		}
+		.largegreentext {
+			font-size: large;
+			color: green;
+			font-weight: bold;
+		}
+
+		.underline {
+			text-decoration: underline;
+		}
+
+		</style>
+	</head>
+	<body>
+		<table width="600" border="0" cellspacing="1" cellpadding="1">
+			<tr>
+				<td>
+					<h1>Sample header</h1>
+				</td>
+			</tr>
+			<!-- Using the class in paragraph  -->
+			<tr>
+				<td>
+					<span class="blueboldtext">Sample text paragraph</span>
+				</td>
+			</tr>
+			<tr>
+			<!-- Example of inline style rule -->
+				<td>
+					<p style="color:blue; font-size:35px;"> <span class="largegreentext">Another</span> sample of text</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

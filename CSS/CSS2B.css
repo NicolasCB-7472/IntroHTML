@@ -1,0 +1,22 @@
+body {
+	background: yellow;
+}
+
+h1 {
+	color:red;
+	text-align: center;
+}
+
+h2 {
+	color: #33adff;
+}
+
+h3 {
+	color: rgb(255,0,255);
+}
+
+
+p {
+	font-family: "Arial";
+	font-size: 20px;
+}
