@@ -6,3 +6,5 @@ para poder desarrollar los conceptos más adelante.
 
 Este repositorio es solo un soporte para poder avanzar a otras aplicaciones
 más complejas
+
+-> Se plantea el uso de un index.html para moverse entre las diferentes paginas de HTML y CSS
